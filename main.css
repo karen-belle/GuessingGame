@@ -1,0 +1,79 @@
+#header, #body, #footer{
+	text-align: center;
+	color: #4D4D4D;
+	font-family:Helvetica, Arial, sans-serif;
+	margin:0 75px 0 75px;
+	border:3px double black;
+	
+}
+
+#header{
+	background-color: #CC66FF;
+	font-family:"Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	font-size: 150%;
+	
+}
+	
+
+#body{
+	background-color: #E6B3FF;
+}
+#footer{
+	font-size:50%;
+	background-color: #CC66FF;
+}
+
+label, input, div{
+	margin:0 auto 0 auto;
+}
+
+input{
+	font-size:16px;
+}
+
+
+.number-buttons{
+	padding: 20px;
+	width:480px;
+
+}
+
+.desc{
+	width:440px;
+	margin:0 auto 0 auto;
+
+}
+
+#body{
+	margin:10px, 100px, 50px, 100px;
+}
+
+
+.number-buttons button  {
+	background-color: #99FF66; 
+    width:40px;
+    height:40px;
+    color: white;
+    border: 1px solid;
+    text-align: center;
+    font-size: 16px;
+}
+
+.number-buttons button:hover{
+	background-color: #CC66FF;
+}
+
+.spectrum{
+	width:438px;
+	color:white;
+	padding:15px;
+}
+
+.spectrum #square{
+	height: 60px;
+	width:60px;
+}
+
+button{
+	font-size:16px;
+}
