@@ -13,7 +13,7 @@
 	font-size: 150%;
 	
 }
-	
+
 
 #body{
 	background-color: #E6B3FF;
@@ -69,11 +69,11 @@ input{
 	padding:15px;
 }
 
-.spectrum #square{
-	height: 60px;
-	width:60px;
-}
 
 button{
 	font-size:16px;
+}
+
+.option-buttons{
+	padding:30px;
 }

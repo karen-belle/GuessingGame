@@ -1,168 +1,177 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Guess the Number!</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    
-  </head>
-  <body>
-  <section id="header">
-    <h1>It's time to play:
-    <br>GUESS THE NUMBER!</h1>
-  </section>  
-  <section id="body">
-    <div>
-          <h2>How to play: </h2>
-          <p class = "desc">Pick a number! The square will turn a color based on how hot or cold you are. You get 5 guesses per game. </p>
-    </div>
-    <div class ="spectrum">
-      <div class="sqaure" style="background:#ff0000;">On fire! You got it!</div>
-      <div class="sqaure" style="background:#ff6600;">Hot, Hot, Hot</div>
-      <div class="sqaure" style="background:#ff9933;">Warmer</div>
-      <div class="sqaure" style="background:#ffff66;">Spring day</div>
-      <div class="sqaure" style="background:#99ccff;">Lukewarm</div>
-      <div class="sqaure" style="background:#3366ff;">Getting chilly</div>
-      <div class="sqaure" style="background:#0000cc;">Ice Cold</div>
-    </div>
-     <div class="name">
-      <form> 
-       <input type="text" placeholder="Enter your name"> 
-       <button type="submit">Submit</button>
-      </form>
-     </div> 
-     
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Guess the Number!</title>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <script src="jquery-1.12.2.js"></script>
 
-      <div class="number-buttons">
-      <div class="row">
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button">10</button>
+      
+    </head>
+    <body>
+    <section id="header">
+      <h1>It's time to play:<br>
+      GUESS THE NUMBER!</h1>
+    </section>  
+    <section id="body">
+      <div>
+            <h3>How to play: </h3>
+            <p class = "desc">Pick a number! The square will turn a color based on how hot or cold you are. You get 5 guesses per game. </p>
       </div>
-      <div class="row">
-        <button type="button">11</button>
-        <button type="button">12</button>
-        <button type="button">13</button>
-        <button type="button">14</button>
-        <button type="button">15</button>
-        <button type="button">16</button>
-        <button type="button">17</button>
-        <button type="button">18</button>
-        <button type="button">19</button>
-        <button type="button">20</button>
+      
+      <div class ="spectrum">
+        <div style="background:#ff0000;">On fire! You got it!</div>
+        <div style="background:#ff6600;">Hot, Hot, Hot</div>
+        <div style="background:#ff9933;">Warmer</div>
+        <div style="background:#ffff66;">Spring day</div>
+        <div style="background:#99ccff;">Lukewarm</div>
+        <div style="background:#3366ff;">Getting chilly</div>
+        <div style="background:#0000cc;">Ice Cold</div>
       </div>
-      <div class="row">
-        <button type="button">21</button>
-        <button type="button">22</button>
-        <button type="button">23</button>
-        <button type="button">24</button>
-        <button type="button">25</button>
-        <button type="button">26</button>
-        <button type="button">27</button>
-        <button type="button">28</button>
-        <button type="button">29</button>
-        <button type="button">30</button>
+       <div class="name">
+        <form class='nameForm'> 
+         <input type="text" id="playName" placeholder="Enter your name"> 
+         <button type="button" id="submit">Submit</button>
+        </form>
+       </div> 
+       
+       <div class = "guess-att">
+        <h3 id ="guess-count"></h3>
+        <h3 id="update"></h3> 
       </div>
-      <div class="row">
-        <button type="button">31</button>
-        <button type="button">32</button>
-        <button type="button">33</button>
-        <button type="button">34</button>
-        <button type="button">35</button>
-        <button type="button">36</button>
-        <button type="button">37</button>
-        <button type="button">38</button>
-        <button type="button">39</button>
-        <button type="button">40</button>
-      </div>
-      <div class="row">        
-        <button type="button">41</button>
-        <button type="button">42</button>
-        <button type="button">43</button>
-        <button type="button">44</button>
-        <button type="button">45</button>
-        <button type="button">46</button>
-        <button type="button">47</button>
-        <button type="button">48</button>
-        <button type="button">49</button>
-        <button type="button">50</button>
-      </div>
-      <div class="row">
-        <button type="button">51</button>
-        <button type="button">52</button>
-        <button type="button">53</button>
-        <button type="button">54</button>
-        <button type="button">55</button>
-        <button type="button">56</button>
-        <button type="button">57</button>
-        <button type="button">58</button>
-        <button type="button">59</button>
-        <button type="button">60</button>
-      </div>
-      <div class="row">
-        <button type="button">61</button>
-        <button type="button">62</button>
-        <button type="button">63</button>
-        <button type="button">64</button>
-        <button type="button">65</button>
-        <button type="button">66</button>
-        <button type="button">67</button>
-        <button type="button">68</button>
-        <button type="button">69</button>
-        <button type="button">70</button>
-      </div>
-      <div class="row">
-        <button type="button">71</button>
-        <button type="button">72</button>
-        <button type="button">73</button>
-        <button type="button">74</button>
-        <button type="button">75</button>
-        <button type="button">76</button>
-        <button type="button">77</button>
-        <button type="button">78</button>
-        <button type="button">79</button>
-        <button type="button">80</button>
-      </div>
-      <div class="row">
-        <button type="button">81</button>
-        <button type="button">82</button>
-        <button type="button">83</button>
-        <button type="button">84</button>
-        <button type="button">85</button>
-        <button type="button">86</button>
-        <button type="button">87</button>
-        <button type="button">88</button>
-        <button type="button">89</button>
-        <button type="button">90</button>
-      </div>
-      <div class="row">
-        <button type="button">91</button>
-        <button type="button">92</button>
-        <button type="button">93</button>
-        <button type="button">94</button>
-        <button type="button">95</button>
-        <button type="button">96</button>
-        <button type="button">97</button>
-        <button type="button">98</button>
-        <button type="button">99</button>
-        <button type="button">100</button>
-      </div>
-      </div> 
-      <div class="option-buttons">
-       <button type="button">Play again!</button>
-       <button type="button">Give me a hint!</button>
-      </div>
-    </form> 
-    <h3>You have 5 guesses remaining, -name-.</h3>
-  </section>
-    <section id="footer">
-      <p>Guess the Number! is brought to you by Karen Abramowitz in coordination with Fullstack and Grace Hopper Academies.</p>
-    </section>    
-  </body>
-</html>
+
+        <div class="number-buttons">
+        <div class="row">
+          <button type="button" id = "1">1</button>
+          <button type="button" id = "2">2</button>
+          <button type="button" id = "3">3</button>
+          <button type="button" id = "4">4</button>
+          <button type="button" id = "5">5</button>
+          <button type="button" id = "6">6</button>
+          <button type="button" id = "7">7</button>
+          <button type="button" id = "8">8</button>
+          <button type="button" id = "9">9</button>
+          <button type="button" id = "10">10</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "11">11</button>
+          <button type="button" id = "12">12</button>
+          <button type="button" id = "13">13</button>
+          <button type="button" id = "14">14</button>
+          <button type="button" id = "15">15</button>
+          <button type="button" id = "16">16</button>
+          <button type="button" id = "17">17</button>
+          <button type="button" id = "18">18</button>
+          <button type="button" id = "19">19</button>
+          <button type="button" id = "20">20</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "21">21</button>
+          <button type="button" id = "22">22</button>
+          <button type="button" id = "23">23</button>
+          <button type="button" id = "24">24</button>
+          <button type="button" id = "25">25</button>
+          <button type="button" id = "26">26</button>
+          <button type="button" id = "27">27</button>
+          <button type="button" id = "28">28</button>
+          <button type="button" id = "29">29</button>
+          <button type="button" id = "30">30</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "31">31</button>
+          <button type="button" id = "32">32</button>
+          <button type="button" id = "33">33</button>
+          <button type="button" id = "34">34</button>
+          <button type="button" id = "35">35</button>
+          <button type="button" id = "36">36</button>
+          <button type="button" id = "37">37</button>
+          <button type="button" id = "38">38</button>
+          <button type="button" id = "39">39</button>
+          <button type="button" id = "40">40</button>
+        </div>
+        <div class="row">        
+          <button type="button" id = "41">41</button>
+          <button type="button" id = "42">42</button>
+          <button type="button" id = "43">43</button>
+          <button type="button" id = "44">44</button>
+          <button type="button" id = "45">45</button>
+          <button type="button" id = "46">46</button>
+          <button type="button" id = "47">47</button>
+          <button type="button" id = "48">48</button>
+          <button type="button" id = "49">49</button>
+          <button type="button" id = "50">50</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "51">51</button>
+          <button type="button" id = "52">52</button>
+          <button type="button" id = "53">53</button>
+          <button type="button" id = "54">54</button>
+          <button type="button" id = "55">55</button>
+          <button type="button" id = "56">56</button>
+          <button type="button" id = "57">57</button>
+          <button type="button" id = "58">58</button>
+          <button type="button" id = "59">59</button>
+          <button type="button" id = "60">60</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "61">61</button>
+          <button type="button" id = "62">62</button>
+          <button type="button" id = "63">63</button>
+          <button type="button" id = "64">64</button>
+          <button type="button" id = "65">65</button>
+          <button type="button" id = "66">66</button>
+          <button type="button" id = "67">67</button>
+          <button type="button" id = "68">68</button>
+          <button type="button" id = "69">69</button>
+          <button type="button" id = "70">70</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "71">71</button>
+          <button type="button" id = "72">72</button>
+          <button type="button" id = "73">73</button>
+          <button type="button" id = "74">74</button>
+          <button type="button" id = "75">75</button>
+          <button type="button" id = "76">76</button>
+          <button type="button" id = "77">77</button>
+          <button type="button" id = "78">78</button>
+          <button type="button" id = "79">79</button>
+          <button type="button" id = "80">80</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "81">81</button>
+          <button type="button" id = "82">82</button>
+          <button type="button" id = "83">83</button>
+          <button type="button" id = "84">84</button>
+          <button type="button" id = "85">85</button>
+          <button type="button" id = "86">86</button>
+          <button type="button" id = "87">87</button>
+          <button type="button" id = "88">88</button>
+          <button type="button" id = "89">89</button>
+          <button type="button" id = "90">90</button>
+        </div>
+        <div class="row">
+          <button type="button" id = "91">91</button>
+          <button type="button" id = "91">92</button>
+          <button type="button" id = "93">93</button>
+          <button type="button" id = "94">94</button>
+          <button type="button" id = "95">95</button>
+          <button type="button" id = "96">96</button>
+          <button type="button" id = "97">97</button>
+          <button type="button" id = "98">98</button>
+          <button type="button" id = "99">99</button>
+          <button type="button" id = "100">100</button>
+        </div>
+        </div>
+      
+        <div class="option-buttons">
+         <button type="button" id ="play">Play again!</button>
+         <button type="button" id = "hint">Give me a hint!</button>
+        </div>
+      </form> 
+      
+    </section>
+      <section id="footer">
+        <p>Guess the Number! is brought to you by Karen Abramowitz in coordination with Fullstack and Grace Hopper Academies.</p>
+      </section>   
+      <script src="guessingGame.js"></script> 
+    </body>
+  </html>
